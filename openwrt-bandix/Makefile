@@ -19,7 +19,7 @@ RUST_BINARY_FILENAME:=bandix-$(RUST_BANDIX_VERSION)-$(RUSTC_TARGET_ARCH).tar.gz
 
 # 修正下载地址定义方式
 PKG_SOURCE:=$(RUST_BINARY_FILENAME)
-PKG_SOURCE_URL:=https://github.com/timsaya/bandix/releases/download/v$(RUST_BANDIX_VERSION)
+PKG_SOURCE_URL:=https://github.com/MitaHill/bandix/releases/download/v$(RUST_BANDIX_VERSION)
 
 # 修正二进制文件校验值
 ifeq ($(ARCH),aarch64)
@@ -60,7 +60,7 @@ else ifeq ($(ARCH),powerpc64)
 else ifeq ($(ARCH),riscv64)
 	PKG_HASH:=4b18915eab8e3435fb6cc1d50298ad84708b14921fb1b60713f37864140aa1ab
 else ifeq ($(ARCH),x86_64)
-	PKG_HASH:=aeab01d678f92f176ba41d08363765ac53719bdaaff26bbd0e93c4fdc12bea20
+	PKG_HASH:=700b6607b4fbfe2d4149aae5581872acb8f490c2bf3289997d664d3198db23bb
 else
 	PKG_HASH:=dummy
 endif
